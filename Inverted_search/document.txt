@@ -1,0 +1,90 @@
+NAME : KALAIVANAN D
+DATE : 05/12/24
+DESCRIPTION : An inverted indexing system commonly used in information retrival system such as search engines.and it maps words to their occurance
+across multiple file allowing efficient searching and retrieval of information
+
+SAMPLE INPUT: ./a.out file_1.txt file_2.txt 
+
+SAMPLE OUTPUT:
+
+validation status:
+====================================
+       << Valid File List >>
+====================================
+File Name           Status
+====================================
+f1.txt              Valid
+f2.txt              Valid
+====================================
+====================================
+       << Valid Files List >>
+====================================
+File Name
+====================================
+f1.txt              f2.txt
+====================================
+
+
+Enter your choice: 1(Create Data Base)
+
+   ******************************
+   Data Base created successfully
+   ******************************
+
+
+Enter your choice: 2(Display Data Base)
+==================================================================================
+                         <<< Displaying Database >>>
+==================================================================================
+IndexWord                File Count     Word Count     File Name
+==================================================================================
+A    are                 2              1              f2.txt
+1              f1.txt
+F    fire                1              1              f1.txt
+H    how                 1              1              f2.txt
+K    kalai               2              1              f2.txt
+1              f1.txt
+W    wild                1              1              f1.txt
+Y    you                 1              1              f2.txt
+====================================================================================
+
+====================================
+
+
+Enter your choice: 3(Search Data Base)
+Please enter the word you want to search for: you
+
+====================================
+Search Result: Word Found
+====================================
+Word                Index          File Count
+====================================
+kalai               10             2
+====================================
+
+File Name           Word Count
+====================================
+f2.txt              1
+f1.txt              1
+====================================
+
+***** Operation Successful *****
+  Search successful: Word found in the Data Base.
+
+
+====================================
+
+Enter your choice: 4(Save Data Base)
+Enter file name (with .txt extension): k.txt
+   ****************************
+   Data Base saved successfully
+   ****************************
+====================================
+
+Enter your choice: 5(Update Data Base)
+Please enter the database file name (with .txt extension): k.txt
+   ****************************
+   Data Base update successfully
+   ****************************
+
+====================================
